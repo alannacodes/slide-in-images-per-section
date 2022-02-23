@@ -1,0 +1,25 @@
+.slide-to-right {
+    clip-path: polygon(0 0, 62% 0, 100% 100%, 0% 100%);
+}
+/* https://bennettfeely.com/clippy/ */
+.slide-to-left {
+    clip-path: polygon(33% 0, 100% 0, 100% 100%, 0% 100%);
+
+}
+
+.grid {
+    display: flex;
+    margin-bottom: 60px;
+    border: 1px solid #000;
+    
+}
+.grid div {
+  flex: 1;
+  padding: 10px;
+}
+.grid div:nth-child(2){
+    text-align:right;
+}
+.grid div:nth-child(2) *{
+    text-align:left;
+}
